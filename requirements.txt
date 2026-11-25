@@ -1,0 +1,13 @@
+# Tested on Kaggle (Python 3.13, NVIDIA Tesla T4)
+numpy>=1.26
+pandas>=2.1
+scipy>=1.11
+scikit-learn==1.6.1
+xgboost==3.4.1
+lightgbm==4.6.0
+catboost==1.2.10
+torch>=2.1
+shap==0.54.1
+matplotlib>=3.8
+seaborn>=0.13
+jinja2>=3.1   # LaTeX table export

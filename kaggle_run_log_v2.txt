@@ -1,0 +1,536 @@
+Config ready. Output dir: /kaggle/working/outputs
+[saved table] T02_duplicate_audit  shape=(21, 3)
+                        Item Maternal Health Risk Fetal Health (CTG)
+                     Dataset Maternal Health Risk Fetal Health (CTG)
+                    Raw_rows                 1014               2126
+            Exact_duplicates                  562                 13
+               Duplicate_pct                55.42               0.61
+                 Unique_rows                  452               2113
+      Unique_feature_vectors                  416               2111
+    Conflicting_label_groups                   35                  2
+     Rows_in_conflict_groups                   71                  4
+Label_noise_accuracy_ceiling               0.9204             0.9991
+                     Raw_Low                406.0                NaN
+                   Dedup_Low                234.0                NaN
+                     Raw_Mid                336.0                NaN
+                   Dedup_Mid                106.0                NaN
+                    Raw_High                272.0                NaN
+                  Dedup_High                112.0                NaN
+                  Raw_Normal                  NaN             1655.0
+                Dedup_Normal                  NaN             1646.0
+                 Raw_Suspect                  NaN              295.0
+               Dedup_Suspect                  NaN              292.0
+            Raw_Pathological                  NaN              176.0
+          Dedup_Pathological                  NaN              175.0
+[saved table] T01_dataset_description  shape=(27, 8)
+Implausible HeartRate (<40 bpm) rows in maternal raw data: 2
+Maternal engineered features: ['Age', 'SystolicBP', 'DiastolicBP', 'BS', 'BodyTemp', 'HeartRate', 'MAP', 'PulsePressure', 'ShockIndex', 'BP_Ratio', 'HTN', 'SevereHTN', 'HyperGly', 'DiabRange', 'Fever', 'AdvAge', 'Teen', 'ClinicalFlagCount']
+Device: cuda | Tesla T4
+[saved table] T03_hyperparameters  shape=(17, 2)
+OCH-MRNet v2 defined.
+Metrics ready.
+Engine ready.
+[maternal|B] fold 1/25 | overlap=0.00% | OCH-MRNet (Proposed) F1=0.6178 HighRec=0.8095 | elapsed 1.8 min, ETA 43.3 min
+[maternal|B] fold 2/25 | overlap=0.00% | OCH-MRNet (Proposed) F1=0.5677 HighRec=0.7500 | elapsed 3.8 min, ETA 43.6 min
+[maternal|B] fold 3/25 | overlap=0.00% | OCH-MRNet (Proposed) F1=0.6654 HighRec=0.8235 | elapsed 5.9 min, ETA 43.5 min
+[maternal|B] fold 4/25 | overlap=0.00% | OCH-MRNet (Proposed) F1=0.6355 HighRec=0.8148 | elapsed 7.8 min, ETA 40.9 min
+[maternal|B] fold 5/25 | overlap=0.00% | OCH-MRNet (Proposed) F1=0.6560 HighRec=0.8947 | elapsed 9.6 min, ETA 38.5 min
+[maternal|B] fold 6/25 | overlap=0.00% | OCH-MRNet (Proposed) F1=0.6186 HighRec=0.7619 | elapsed 11.4 min, ETA 36.1 min
+[maternal|B] fold 7/25 | overlap=0.00% | OCH-MRNet (Proposed) F1=0.6934 HighRec=0.8500 | elapsed 13.1 min, ETA 33.8 min
+[maternal|B] fold 8/25 | overlap=0.00% | OCH-MRNet (Proposed) F1=0.6083 HighRec=0.8462 | elapsed 15.1 min, ETA 32.1 min
+[maternal|B] fold 9/25 | overlap=0.00% | OCH-MRNet (Proposed) F1=0.5566 HighRec=0.8333 | elapsed 16.9 min, ETA 30.0 min
+[maternal|B] fold 10/25 | overlap=0.00% | OCH-MRNet (Proposed) F1=0.6407 HighRec=0.7778 | elapsed 18.6 min, ETA 27.9 min
+[maternal|B] fold 11/25 | overlap=0.00% | OCH-MRNet (Proposed) F1=0.7148 HighRec=0.9048 | elapsed 19.3 min, ETA 24.6 min
+[maternal|B] fold 12/25 | overlap=0.00% | OCH-MRNet (Proposed) F1=0.6403 HighRec=0.9130 | elapsed 20.1 min, ETA 21.8 min
+[maternal|B] fold 13/25 | overlap=0.00% | OCH-MRNet (Proposed) F1=0.6009 HighRec=0.7727 | elapsed 20.8 min, ETA 19.2 min
+[maternal|B] fold 14/25 | overlap=0.00% | OCH-MRNet (Proposed) F1=0.5452 HighRec=0.7600 | elapsed 21.6 min, ETA 16.9 min
+[maternal|B] fold 15/25 | overlap=0.00% | OCH-MRNet (Proposed) F1=0.6559 HighRec=0.7143 | elapsed 22.3 min, ETA 14.8 min
+[maternal|B] fold 16/25 | overlap=0.00% | OCH-MRNet (Proposed) F1=0.6450 HighRec=0.7778 | elapsed 23.0 min, ETA 12.9 min
+[maternal|B] fold 17/25 | overlap=0.00% | OCH-MRNet (Proposed) F1=0.5832 HighRec=0.8077 | elapsed 23.8 min, ETA 11.2 min
+[maternal|B] fold 18/25 | overlap=0.00% | OCH-MRNet (Proposed) F1=0.6331 HighRec=0.9565 | elapsed 24.5 min, ETA 9.5 min
+[maternal|B] fold 19/25 | overlap=0.00% | OCH-MRNet (Proposed) F1=0.5495 HighRec=0.8095 | elapsed 25.2 min, ETA 8.0 min
+[maternal|B] fold 20/25 | overlap=0.00% | OCH-MRNet (Proposed) F1=0.6600 HighRec=0.8333 | elapsed 25.9 min, ETA 6.5 min
+[maternal|B] fold 21/25 | overlap=0.00% | OCH-MRNet (Proposed) F1=0.6467 HighRec=0.8571 | elapsed 26.6 min, ETA 5.1 min
+[maternal|B] fold 22/25 | overlap=0.00% | OCH-MRNet (Proposed) F1=0.6107 HighRec=0.7500 | elapsed 27.3 min, ETA 3.7 min
+[maternal|B] fold 23/25 | overlap=0.00% | OCH-MRNet (Proposed) F1=0.6682 HighRec=0.7308 | elapsed 28.0 min, ETA 2.4 min
+[maternal|B] fold 24/25 | overlap=0.00% | OCH-MRNet (Proposed) F1=0.6774 HighRec=0.8750 | elapsed 28.8 min, ETA 1.2 min
+[maternal|B] fold 25/25 | overlap=0.00% | OCH-MRNet (Proposed) F1=0.6498 HighRec=0.7619 | elapsed 29.5 min, ETA 0.0 min
+[maternal|A] fold 1/15 | overlap=73.89% | OCH-MRNet (Proposed) F1=0.8154 HighRec=0.8393 | elapsed 1.8 min, ETA 24.9 min
+[maternal|A] fold 2/15 | overlap=80.30% | OCH-MRNet (Proposed) F1=0.8514 HighRec=0.9538 | elapsed 3.6 min, ETA 23.2 min
+[maternal|A] fold 3/15 | overlap=76.85% | OCH-MRNet (Proposed) F1=0.8099 HighRec=0.9655 | elapsed 5.6 min, ETA 22.4 min
+[maternal|A] fold 4/15 | overlap=79.80% | OCH-MRNet (Proposed) F1=0.8714 HighRec=0.9574 | elapsed 7.5 min, ETA 20.6 min
+[maternal|A] fold 5/15 | overlap=82.18% | OCH-MRNet (Proposed) F1=0.8496 HighRec=0.9130 | elapsed 9.2 min, ETA 18.4 min
+[maternal|A] fold 6/15 | overlap=73.40% | OCH-MRNet (Proposed) F1=0.8030 HighRec=0.8966 | elapsed 11.3 min, ETA 16.9 min
+[maternal|A] fold 7/15 | overlap=75.37% | OCH-MRNet (Proposed) F1=0.8157 HighRec=0.9592 | elapsed 12.8 min, ETA 14.6 min
+[maternal|A] fold 8/15 | overlap=80.79% | OCH-MRNet (Proposed) F1=0.8805 HighRec=0.9298 | elapsed 14.9 min, ETA 13.0 min
+[maternal|A] fold 9/15 | overlap=75.37% | OCH-MRNet (Proposed) F1=0.8528 HighRec=0.9016 | elapsed 17.2 min, ETA 11.5 min
+[maternal|A] fold 10/15 | overlap=74.75% | OCH-MRNet (Proposed) F1=0.8478 HighRec=0.9362 | elapsed 19.0 min, ETA 9.5 min
+[maternal|A] fold 11/15 | overlap=77.83% | OCH-MRNet (Proposed) F1=0.8417 HighRec=0.9107 | elapsed 21.1 min, ETA 7.7 min
+[maternal|A] fold 12/15 | overlap=80.79% | OCH-MRNet (Proposed) F1=0.8189 HighRec=0.9273 | elapsed 22.7 min, ETA 5.7 min
+[maternal|A] fold 13/15 | overlap=76.85% | OCH-MRNet (Proposed) F1=0.8475 HighRec=0.8983 | elapsed 24.5 min, ETA 3.8 min
+[maternal|A] fold 14/15 | overlap=76.24% | OCH-MRNet (Proposed) F1=0.8004 HighRec=0.8727 | elapsed 25.9 min, ETA 1.8 min
+[maternal|A] fold 15/15 | overlap=77.83% | OCH-MRNet (Proposed) F1=0.8570 HighRec=0.9362 | elapsed 27.5 min, ETA 0.0 min
+[fetal|B] fold 1/15 | overlap=0.00% | OCH-MRNet (Proposed) F1=0.8521 HighRec=0.9189 | elapsed 7.2 min, ETA 100.9 min
+[fetal|B] fold 2/15 | overlap=0.00% | OCH-MRNet (Proposed) F1=0.8842 HighRec=0.9143 | elapsed 14.6 min, ETA 95.0 min
+[fetal|B] fold 3/15 | overlap=0.00% | OCH-MRNet (Proposed) F1=0.9064 HighRec=0.9714 | elapsed 21.4 min, ETA 85.7 min
+[fetal|B] fold 4/15 | overlap=0.00% | OCH-MRNet (Proposed) F1=0.8493 HighRec=0.8824 | elapsed 28.0 min, ETA 76.9 min
+[fetal|B] fold 5/15 | overlap=0.00% | OCH-MRNet (Proposed) F1=0.8761 HighRec=0.9706 | elapsed 35.4 min, ETA 70.8 min
+[fetal|B] fold 6/15 | overlap=0.00% | OCH-MRNet (Proposed) F1=0.9099 HighRec=1.0000 | elapsed 38.3 min, ETA 57.4 min
+[fetal|B] fold 7/15 | overlap=0.00% | OCH-MRNet (Proposed) F1=0.8808 HighRec=0.9394 | elapsed 40.9 min, ETA 46.7 min
+[fetal|B] fold 8/15 | overlap=0.00% | OCH-MRNet (Proposed) F1=0.8661 HighRec=0.9024 | elapsed 43.3 min, ETA 37.9 min
+[fetal|B] fold 9/15 | overlap=0.00% | OCH-MRNet (Proposed) F1=0.8427 HighRec=0.9062 | elapsed 46.1 min, ETA 30.7 min
+[fetal|B] fold 10/15 | overlap=0.00% | OCH-MRNet (Proposed) F1=0.9065 HighRec=0.9394 | elapsed 48.6 min, ETA 24.3 min
+[fetal|B] fold 11/15 | overlap=0.00% | OCH-MRNet (Proposed) F1=0.8616 HighRec=0.9706 | elapsed 51.3 min, ETA 18.7 min
+[fetal|B] fold 12/15 | overlap=0.00% | OCH-MRNet (Proposed) F1=0.8904 HighRec=0.9474 | elapsed 54.2 min, ETA 13.5 min
+[fetal|B] fold 13/15 | overlap=0.00% | OCH-MRNet (Proposed) F1=0.8855 HighRec=0.8919 | elapsed 56.6 min, ETA 8.7 min
+[fetal|B] fold 14/15 | overlap=0.00% | OCH-MRNet (Proposed) F1=0.8919 HighRec=1.0000 | elapsed 59.5 min, ETA 4.3 min
+[fetal|B] fold 15/15 | overlap=0.00% | OCH-MRNet (Proposed) F1=0.8413 HighRec=0.8889 | elapsed 62.3 min, ETA 0.0 min
+ALL EXPERIMENTS DONE
+[saved table] T05_main_results_maternal  shape=(17, 16)
+
+==== MAIN RESULTS (maternal, Protocol B) ====
+                Model        Accuracy         MacroF1             MCC             QWK             AUC      HighRecall             ECE
+   Gradient Boosting 0.7103 ± 0.0332 0.6471 ± 0.0424 0.5194 ± 0.0519 0.7028 ± 0.0470 0.8209 ± 0.0264 0.7607 ± 0.0855 0.1368 ± 0.0289
+       Random Forest 0.7113 ± 0.0328 0.6363 ± 0.0435 0.5209 ± 0.0525 0.7014 ± 0.0529 0.8166 ± 0.0291 0.7737 ± 0.0766 0.1028 ± 0.0247
+             XGBoost 0.6996 ± 0.0367 0.6360 ± 0.0473 0.4996 ± 0.0628 0.6935 ± 0.0472 0.8151 ± 0.0322 0.7509 ± 0.0861 0.1771 ± 0.0336
+            CatBoost 0.7068 ± 0.0322 0.6354 ± 0.0427 0.5113 ± 0.0540 0.7045 ± 0.0584 0.8100 ± 0.0267 0.7441 ± 0.0751 0.1331 ± 0.0321
+       CatBoost + KF 0.7014 ± 0.0463 0.6343 ± 0.0571 0.5026 ± 0.0798 0.7020 ± 0.0551 0.8028 ± 0.0320 0.7416 ± 0.0992 0.1447 ± 0.0350
+            LightGBM 0.6941 ± 0.0396 0.6339 ± 0.0469 0.4926 ± 0.0666 0.6904 ± 0.0450 0.8113 ± 0.0313 0.7343 ± 0.0841 0.1824 ± 0.0407
+OCH-MRNet (Proposed) 0.6678 ± 0.0349 0.6296 ± 0.0441 0.4710 ± 0.0519 0.6773 ± 0.0436 0.8010 ± 0.0263 0.8155 ± 0.0617 0.1089 ± 0.0278
+            AdaBoost 0.7166 ± 0.0349 0.6288 ± 0.0477 0.5310 ± 0.0577 0.6870 ± 0.0489 0.7948 ± 0.0217 0.7370 ± 0.0986 0.3592 ± 0.0347
+         Extra Trees 0.6952 ± 0.0305 0.6209 ± 0.0401 0.4922 ± 0.0461 0.6872 ± 0.0494 0.7983 ± 0.0312 0.7398 ± 0.0695 0.1568 ± 0.0239
+       Decision Tree 0.6780 ± 0.0262 0.6144 ± 0.0314 0.4659 ± 0.0393 0.6783 ± 0.0494 0.7260 ± 0.0260 0.7089 ± 0.0785 0.3120 ± 0.0352
+      FT-Transformer 0.7149 ± 0.0332 0.6106 ± 0.0485 0.5297 ± 0.0498 0.7122 ± 0.0367 0.8005 ± 0.0304 0.8135 ± 0.0802 0.1110 ± 0.0286
+           SVM (RBF) 0.7072 ± 0.0382 0.6037 ± 0.0425 0.5154 ± 0.0545 0.6768 ± 0.0464 0.7642 ± 0.0326 0.7483 ± 0.0937 0.1031 ± 0.0276
+                 KNN 0.6710 ± 0.0418 0.5892 ± 0.0455 0.4467 ± 0.0616 0.6254 ± 0.0558 0.7636 ± 0.0399 0.6649 ± 0.1086 0.1484 ± 0.0332
+     Stacking (Lit.) 0.6608 ± 0.0419 0.5838 ± 0.0462 0.4345 ± 0.0680 0.6526 ± 0.0604 0.7538 ± 0.0341 0.7525 ± 0.0822 0.2184 ± 0.0394
+                 MLP 0.6636 ± 0.0432 0.5300 ± 0.0595 0.4407 ± 0.0599 0.5781 ± 0.0742 0.7721 ± 0.0334 0.7016 ± 0.1019 0.1199 ± 0.0353
+         Naive Bayes 0.6519 ± 0.0421 0.5296 ± 0.0443 0.4109 ± 0.0571 0.5744 ± 0.0499 0.7687 ± 0.0225 0.5464 ± 0.1099 0.1869 ± 0.0331
+ Logistic Regression 0.6650 ± 0.0380 0.5251 ± 0.0474 0.4391 ± 0.0587 0.5741 ± 0.0630 0.7649 ± 0.0287 0.6330 ± 0.0869 0.1127 ± 0.0284
+[saved table] T05_main_results_fetal  shape=(17, 16)
+
+==== MAIN RESULTS (fetal, Protocol B) ====
+                Model        Accuracy         MacroF1             MCC             QWK             AUC      HighRecall             ECE
+             XGBoost 0.9579 ± 0.0102 0.9241 ± 0.0224 0.8835 ± 0.0279 0.9265 ± 0.0243 0.9906 ± 0.0035 0.9240 ± 0.0568 0.0269 ± 0.0063
+            LightGBM 0.9571 ± 0.0074 0.9190 ± 0.0169 0.8812 ± 0.0204 0.9211 ± 0.0179 0.9899 ± 0.0038 0.9111 ± 0.0427 0.0382 ± 0.0060
+     Stacking (Lit.) 0.9527 ± 0.0126 0.9165 ± 0.0250 0.8699 ± 0.0330 0.9161 ± 0.0282 0.9863 ± 0.0049 0.9154 ± 0.0521 0.0347 ± 0.0069
+            CatBoost 0.9539 ± 0.0101 0.9161 ± 0.0213 0.8717 ± 0.0283 0.9141 ± 0.0231 0.9887 ± 0.0034 0.9051 ± 0.0528 0.0187 ± 0.0047
+       CatBoost + KF 0.9532 ± 0.0117 0.9153 ± 0.0242 0.8696 ± 0.0317 0.9136 ± 0.0252 0.9886 ± 0.0035 0.9090 ± 0.0585 0.0211 ± 0.0054
+   Gradient Boosting 0.9521 ± 0.0106 0.9137 ± 0.0215 0.8670 ± 0.0280 0.9052 ± 0.0211 0.9866 ± 0.0046 0.9016 ± 0.0416 0.0245 ± 0.0074
+       Random Forest 0.9472 ± 0.0091 0.8994 ± 0.0175 0.8524 ± 0.0243 0.9010 ± 0.0217 0.9888 ± 0.0031 0.8836 ± 0.0393 0.0380 ± 0.0078
+OCH-MRNet (Proposed) 0.9205 ± 0.0173 0.8763 ± 0.0232 0.8083 ± 0.0368 0.8631 ± 0.0348 0.9867 ± 0.0045 0.9363 ± 0.0395 0.0309 ± 0.0077
+           SVM (RBF) 0.9309 ± 0.0143 0.8723 ± 0.0275 0.8071 ± 0.0401 0.8818 ± 0.0283 0.9819 ± 0.0064 0.8696 ± 0.0514 0.0299 ± 0.0071
+       Decision Tree 0.9229 ± 0.0107 0.8713 ± 0.0200 0.7905 ± 0.0321 0.8621 ± 0.0278 0.9030 ± 0.0187 0.9033 ± 0.0510 0.0769 ± 0.0106
+         Extra Trees 0.9325 ± 0.0125 0.8660 ± 0.0246 0.8095 ± 0.0357 0.8824 ± 0.0241 0.9845 ± 0.0047 0.8368 ± 0.0559 0.0351 ± 0.0076
+            AdaBoost 0.9150 ± 0.0112 0.8583 ± 0.0227 0.7611 ± 0.0320 0.8384 ± 0.0352 0.9461 ± 0.0070 0.8917 ± 0.0553 0.5507 ± 0.0109
+                 MLP 0.9153 ± 0.0178 0.8379 ± 0.0331 0.7622 ± 0.0514 0.8481 ± 0.0347 0.9739 ± 0.0078 0.7874 ± 0.0630 0.0298 ± 0.0080
+      FT-Transformer 0.9207 ± 0.0139 0.8373 ± 0.0288 0.7813 ± 0.0402 0.8602 ± 0.0398 0.9730 ± 0.0076 0.7851 ± 0.0937 0.0391 ± 0.0136
+                 KNN 0.9126 ± 0.0164 0.8315 ± 0.0306 0.7507 ± 0.0435 0.8400 ± 0.0342 0.9669 ± 0.0087 0.7932 ± 0.0537 0.0303 ± 0.0077
+ Logistic Regression 0.8948 ± 0.0107 0.7983 ± 0.0236 0.7079 ± 0.0304 0.8100 ± 0.0206 0.9679 ± 0.0083 0.7606 ± 0.0417 0.0271 ± 0.0093
+         Naive Bayes 0.7369 ± 0.0526 0.6580 ± 0.0379 0.5427 ± 0.0434 0.5941 ± 0.0615 0.8986 ± 0.0164 0.6098 ± 0.0479 0.2425 ± 0.0492
+[saved table] T04_leakage_protocolA_vs_B  shape=(17, 7)
+
+Mean train-test exact overlap — Protocol A: 77.48% | Protocol B: 0.00%
+               Model  Acc_A (naive)  Acc_B (dedup+group)  F1_A (naive)  F1_B (dedup+group)  ΔAcc (inflation, pp)  ΔF1 (inflation, pp)
+         Extra Trees         0.8560               0.6952        0.8584              0.6209               16.0845              23.7508
+             XGBoost         0.8521               0.6996        0.8551              0.6360               15.2496              21.9133
+            LightGBM         0.8517               0.6941        0.8546              0.6339               15.7679              22.0737
+       Random Forest         0.8481               0.7113        0.8514              0.6363               13.6871              21.5025
+            CatBoost         0.8402               0.7068        0.8431              0.6354               13.3447              20.7750
+       CatBoost + KF         0.8393               0.7014        0.8424              0.6343               13.7838              20.8146
+       Decision Tree         0.8376               0.6780        0.8415              0.6144               15.9629              22.7184
+OCH-MRNet (Proposed)         0.8353               0.6678        0.8375              0.6296               16.7505              20.7902
+     Stacking (Lit.)         0.8317               0.6608        0.8333              0.5838               17.0883              24.9508
+                 KNN         0.8241               0.6710        0.8283              0.5892               15.3108              23.9064
+   Gradient Boosting         0.8185               0.7103        0.8221              0.6471               10.8191              17.4979
+      FT-Transformer         0.7101               0.7149        0.7053              0.6106               -0.4814               9.4662
+           SVM (RBF)         0.6966               0.7072        0.6915              0.6037               -1.0661               8.7761
+            AdaBoost         0.6831               0.7166        0.6703              0.6288               -3.3529               4.1504
+                 MLP         0.6746               0.6636        0.6676              0.5300                1.0933              13.7537
+ Logistic Regression         0.6157               0.6650        0.6032              0.5251               -4.9343               7.8089
+         Naive Bayes         0.6032               0.6519        0.5634              0.5296               -4.8710               3.3845
+[saved table] T06_ablation_maternal  shape=(8, 19)
+
+==== ABLATION (maternal) ====
+                           Model  MacroF1_mean  HighRecall_mean  ECE_mean  ΔMacroF1 vs Full (pp)
+               OCH-MRNet (Full)        0.6260           0.8162    0.1130                 0.0000
+w/o Stacking meta-learner (avg)        0.6347           0.8459    0.1044                 0.8660
+    w/o FT branch (CatBoost+GB)        0.6422           0.8384    0.1172                 1.6208
+    w/o GB branch (FT+CatBoost)        0.6182           0.8189    0.0999                -0.7859
+    w/o Tree branches (FT only)        0.5717           0.8183    0.1007                -5.4366
+         w/o Knowledge features        0.6505           0.8248    0.1005                 2.4500
+          w/o Ordinal loss (CE)        0.6312           0.8252    0.1112                 0.5165
+   w/o Cost-sensitive weighting        0.6264           0.8059    0.0842                 0.0349
+[saved table] T06_ablation_fetal  shape=(8, 19)
+
+==== ABLATION (fetal) ====
+                           Model  MacroF1_mean  HighRecall_mean  ECE_mean  ΔMacroF1 vs Full (pp)
+               OCH-MRNet (Full)        0.8736           0.9315    0.0374                 0.0000
+w/o Stacking meta-learner (avg)        0.9082           0.9312    0.0321                 3.4610
+    w/o FT branch (CatBoost+GB)        0.8783           0.9371    0.0309                 0.4720
+    w/o GB branch (FT+CatBoost)        0.8715           0.9372    0.0348                -0.2130
+    w/o Tree branches (FT only)        0.8143           0.8917    0.0331                -5.9375
+         w/o Knowledge features        0.8682           0.9369    0.0385                -0.5434
+          w/o Ordinal loss (CE)        0.8669           0.9260    0.0321                -0.6739
+   w/o Cost-sensitive weighting        0.9177           0.8967    0.0195                 4.4098
+[saved table] T07a_calibration_maternal  shape=(18, 4)
+[saved table] T07b_conformal_maternal  shape=(8, 10)
+
+==== CONFORMAL (maternal) ====
+                       Method  Alpha  Target coverage  Coverage  HighClassCoverage  AvgSetSize  Singleton  Empty  Abstain  SingletonAcc
+Class-conditional (Mondrian)   0.05             0.95     0.955              0.970       2.221      0.072    0.0    0.928         0.893
+Class-conditional (Mondrian)   0.10             0.90     0.905              0.917       1.890      0.176    0.0    0.824         0.840
+Class-conditional (Mondrian)   0.15             0.85     0.842              0.873       1.667      0.339    0.0    0.661         0.714
+Class-conditional (Mondrian)   0.20             0.80     0.790              0.829       1.521      0.479    0.0    0.521         0.645
+              Marginal (LAC)   0.05             0.95     0.949              0.921       2.055      0.099    0.0    0.901         0.885
+              Marginal (LAC)   0.10             0.90     0.894              0.885       1.764      0.272    0.0    0.728         0.822
+              Marginal (LAC)   0.15             0.85     0.847              0.863       1.564      0.443    0.0    0.557         0.761
+              Marginal (LAC)   0.20             0.80     0.790              0.849       1.364      0.636    0.0    0.364         0.720
+[saved table] T07c_triage_sets_maternal  shape=(7, 4)
+[saved table] T07a_calibration_fetal  shape=(18, 4)
+[saved table] T07b_conformal_fetal  shape=(8, 10)
+
+==== CONFORMAL (fetal) ====
+                       Method  Alpha  Target coverage  Coverage  HighClassCoverage  AvgSetSize  Singleton  Empty  Abstain  SingletonAcc
+Class-conditional (Mondrian)   0.05             0.95     0.958              0.970       1.160      0.846  0.000    0.154         0.958
+Class-conditional (Mondrian)   0.10             0.90     0.908              0.922       0.999      0.980  0.010    0.020         0.916
+Class-conditional (Mondrian)   0.15             0.85     0.863              0.888       0.909      0.909  0.091    0.091         0.950
+Class-conditional (Mondrian)   0.20             0.80     0.814              0.842       0.838      0.838  0.162    0.162         0.971
+              Marginal (LAC)   0.05             0.95     0.954              0.954       1.079      0.922  0.000    0.078         0.954
+              Marginal (LAC)   0.10             0.90     0.908              0.927       0.972      0.972  0.028    0.028         0.934
+              Marginal (LAC)   0.15             0.85     0.860              0.913       0.892      0.892  0.108    0.108         0.964
+              Marginal (LAC)   0.20             0.80     0.812              0.905       0.830      0.830  0.170    0.170         0.978
+[saved table] T07c_triage_sets_fetal  shape=(6, 4)
+[saved table] T10_computational_cost  shape=(34, 5)
+[saved table] T08_statistical_tests_maternal  shape=(16, 9)
+
+[maternal] Friedman χ²=182.822, p=2.288e-30 | k=17, N=25, Nemenyi CD=4.939
+                                 Comparison  MeanΔMacroF1  Wilcoxon_p_Holm  NB_p_Holm  Nemenyi_significant
+  OCH-MRNet (Proposed) vs Gradient Boosting      -0.01751          0.67932    1.00000                False
+      OCH-MRNet (Proposed) vs Random Forest      -0.00670          1.00000    1.00000                False
+            OCH-MRNet (Proposed) vs XGBoost      -0.00634          1.00000    1.00000                False
+           OCH-MRNet (Proposed) vs CatBoost      -0.00576          1.00000    1.00000                False
+      OCH-MRNet (Proposed) vs CatBoost + KF      -0.00464          1.00000    1.00000                False
+           OCH-MRNet (Proposed) vs LightGBM      -0.00423          1.00000    1.00000                False
+           OCH-MRNet (Proposed) vs AdaBoost       0.00088          1.00000    1.00000                False
+        OCH-MRNet (Proposed) vs Extra Trees       0.00873          1.00000    1.00000                False
+      OCH-MRNet (Proposed) vs Decision Tree       0.01528          0.58752    1.00000                False
+     OCH-MRNet (Proposed) vs FT-Transformer       0.01900          0.85852    1.00000                False
+          OCH-MRNet (Proposed) vs SVM (RBF)       0.02589          0.12599    1.00000                False
+                OCH-MRNet (Proposed) vs KNN       0.04042          0.00428    1.00000                False
+    OCH-MRNet (Proposed) vs Stacking (Lit.)       0.04581          0.01950    1.00000                False
+                OCH-MRNet (Proposed) vs MLP       0.09962          0.00002    0.16384                 True
+        OCH-MRNet (Proposed) vs Naive Bayes       0.10007          0.00001    0.09281                 True
+OCH-MRNet (Proposed) vs Logistic Regression       0.10452          0.00000    0.00536                 True
+[saved table] T08_statistical_tests_fetal  shape=(16, 9)
+
+[fetal] Friedman χ²=211.339, p=4.009e-36 | k=17, N=15, Nemenyi CD=6.376
+                                 Comparison  MeanΔMacroF1  Wilcoxon_p_Holm  NB_p_Holm  Nemenyi_significant
+            OCH-MRNet (Proposed) vs XGBoost      -0.04779          0.00098    0.01293                 True
+           OCH-MRNet (Proposed) vs LightGBM      -0.04263          0.00098    0.00085                False
+    OCH-MRNet (Proposed) vs Stacking (Lit.)      -0.04013          0.00098    0.01684                False
+           OCH-MRNet (Proposed) vs CatBoost      -0.03981          0.00098    0.02267                False
+      OCH-MRNet (Proposed) vs CatBoost + KF      -0.03896          0.00098    0.01786                False
+  OCH-MRNet (Proposed) vs Gradient Boosting      -0.03735          0.00098    0.05465                False
+      OCH-MRNet (Proposed) vs Random Forest      -0.02304          0.00098    0.12760                False
+          OCH-MRNet (Proposed) vs SVM (RBF)       0.00403          0.66052    1.00000                False
+      OCH-MRNet (Proposed) vs Decision Tree       0.00499          0.67877    1.00000                False
+        OCH-MRNet (Proposed) vs Extra Trees       0.01029          0.21899    1.00000                False
+           OCH-MRNet (Proposed) vs AdaBoost       0.01803          0.02148    0.46032                False
+                OCH-MRNet (Proposed) vs MLP       0.03843          0.00763    0.42241                False
+     OCH-MRNet (Proposed) vs FT-Transformer       0.03906          0.00098    0.09327                False
+                OCH-MRNet (Proposed) vs KNN       0.04483          0.00098    0.04387                False
+OCH-MRNet (Proposed) vs Logistic Regression       0.07800          0.00098    0.00017                False
+        OCH-MRNet (Proposed) vs Naive Bayes       0.21829          0.00098    0.00001                 True
+[saved figure] Fig02_class_distribution_raw_vs_dedup
+[saved figure] Fig03a_maternal_correlation
+[saved figure] Fig03b_maternal_feature_by_risk
+[saved figure] Fig03c_fetal_feature_correlation
+[saved figure] Fig04_leakage_inflation
+[saved figure] Fig05_model_comparison_maternal
+[saved figure] Fig05_model_comparison_fetal
+[saved figure] Fig06_confusion_maternal
+[saved figure] Fig06_confusion_fetal
+[saved figure] Fig07_roc_pr_maternal
+[saved figure] Fig07_roc_pr_fetal
+[saved figure] Fig08_reliability_maternal
+[saved figure] Fig08_reliability_fetal
+[saved figure] Fig09_conformal_maternal
+[saved figure] Fig09_conformal_fetal
+[saved figure] Fig10_critical_difference_maternal
+[saved figure] Fig10_critical_difference_fetal
+[saved figure] Fig12_decision_curve_maternal
+[saved figure] Fig12_decision_curve_fetal
+[saved table] T11_robustness_maternal  shape=(30, 4)
+[saved figure] Fig13_robustness_maternal
+[saved table] T11_robustness_fetal  shape=(30, 4)
+[saved figure] Fig13_robustness_fetal
+[saved figure] Fig14_ablation_maternal
+[saved figure] Fig14_ablation_fetal
+[saved table] T09_subgroup_fairness_age  shape=(6, 9)
+               Model        AgeBand   n  n_high  Accuracy  MacroF1  HighRecall  UnderTriage    ECE
+OCH-MRNet (Proposed)     <20 (teen) 126      22    0.6508   0.5621      0.5909       0.1587 0.1180
+OCH-MRNet (Proposed)          20–34 189      36    0.7037   0.7017      0.8611       0.1270 0.0806
+OCH-MRNet (Proposed) ≥35 (advanced) 137      54    0.6277   0.5336      0.8704       0.1168 0.1199
+   Gradient Boosting     <20 (teen) 126      22    0.6349   0.5234      0.5455       0.2063 0.1842
+   Gradient Boosting          20–34 189      36    0.7566   0.7386      0.8333       0.1746 0.0864
+   Gradient Boosting ≥35 (advanced) 137      54    0.7226   0.5926      0.8148       0.1533 0.1101
+[saved figure] Fig15_subgroup_age
+[final] maternal: FT epochs=10, CatBoost iters=560
+[final] fetal: FT epochs=81, CatBoost iters=1993
+[saved figure] Fig11a_shap_beeswarm_maternal
+[saved figure] Fig11b_shap_importance_maternal
+[saved table] T12_shap_importance_maternal  shape=(6, 5)
+[saved figure] Fig11d_shap_waterfall_maternal
+[saved figure] Fig11a_shap_beeswarm_fetal
+[saved figure] Fig11b_shap_importance_fetal
+[saved table] T12_shap_importance_fetal  shape=(15, 5)
+[saved figure] Fig11d_shap_waterfall_fetal
+[saved table] T13_counterfactuals_maternal  shape=(18, 8)
+ PatientID  Age  Original_P_high  CF_rank                                   Changes New_class  New_P_high  Norm_L1_distance
+       198 50.0            0.838        1          BS: 16 → 9.1; HeartRate: 76 → 74       Mid       0.379             2.684
+       198 50.0            0.838        2                              BS: 16 → 8.3       Mid       0.436             2.722
+       198 50.0            0.838        3                              BS: 16 → 8.2       Mid       0.416             2.757
+       249 45.0            0.793        1 BodyTemp: 101 → 101.6; HeartRate: 70 → 75       Mid       0.482             1.038
+       249 45.0            0.793        2 BodyTemp: 101 → 102.2; HeartRate: 70 → 74       Mid       0.434             1.341
+       249 45.0            0.793        3 BodyTemp: 101 → 101.6; HeartRate: 70 → 79       Mid       0.482             1.529
+       150 60.0            0.764        1      SystolicBP: 120 → 119; BS: 15 → 10.7       Mid       0.374             1.576
+       150 60.0            0.764        2       DiastolicBP: 85 → 86; BS: 15 → 10.5       Mid       0.384             1.663
+       150 60.0            0.764        3                               BS: 15 → 10       Mid       0.475             1.767
+       304 65.0            0.826        1            BS: 15 → 8; HeartRate: 86 → 85       Mid       0.365             2.597
+       304 65.0            0.826        2                              BS: 15 → 7.6       Mid       0.350             2.616
+       304 65.0            0.826        3                              BS: 15 → 7.5       Mid       0.310             2.651
+       152 17.0            0.563        1                               BS: 6.1 → 6       Mid       0.395             0.035
+       152 17.0            0.563        2                             BS: 6.1 → 6.7       Mid       0.323             0.212
+       152 17.0            0.563        3                             BS: 6.1 → 6.8       Mid       0.336             0.247
+        17 25.0            0.834        1                            BS: 7.01 → 6.7       Mid       0.261             0.110
+        17 25.0            0.834        2                            BS: 7.01 → 6.6       Mid       0.419             0.145
+        17 25.0            0.834        3                            BS: 7.01 → 6.5       Mid       0.418             0.180
+[saved table] T14_literature_comparison  shape=(5, 6)
+NOTE: verify the literature numbers against the original papers before submission.
+
+====================================================================================================
+FINAL SUMMARY — copy everything below and share
+====================================================================================================
+                        Item Maternal Health Risk Fetal Health (CTG)
+                     Dataset Maternal Health Risk Fetal Health (CTG)
+                    Raw_rows                 1014               2126
+            Exact_duplicates                  562                 13
+               Duplicate_pct                55.42               0.61
+                 Unique_rows                  452               2113
+      Unique_feature_vectors                  416               2111
+    Conflicting_label_groups                   35                  2
+     Rows_in_conflict_groups                   71                  4
+Label_noise_accuracy_ceiling               0.9204             0.9991
+                     Raw_Low                406.0                NaN
+                   Dedup_Low                234.0                NaN
+                     Raw_Mid                336.0                NaN
+                   Dedup_Mid                106.0                NaN
+                    Raw_High                272.0                NaN
+                  Dedup_High                112.0                NaN
+                  Raw_Normal                  NaN             1655.0
+                Dedup_Normal                  NaN             1646.0
+                 Raw_Suspect                  NaN              295.0
+               Dedup_Suspect                  NaN              292.0
+            Raw_Pathological                  NaN              176.0
+          Dedup_Pathological                  NaN              175.0
+
+--- LEAKAGE (maternal) ---
+               Model  Acc_A (naive)  Acc_B (dedup+group)  ΔAcc (inflation, pp)  ΔF1 (inflation, pp)
+         Extra Trees         0.8560               0.6952               16.0845              23.7508
+             XGBoost         0.8521               0.6996               15.2496              21.9133
+            LightGBM         0.8517               0.6941               15.7679              22.0737
+       Random Forest         0.8481               0.7113               13.6871              21.5025
+            CatBoost         0.8402               0.7068               13.3447              20.7750
+       CatBoost + KF         0.8393               0.7014               13.7838              20.8146
+       Decision Tree         0.8376               0.6780               15.9629              22.7184
+OCH-MRNet (Proposed)         0.8353               0.6678               16.7505              20.7902
+     Stacking (Lit.)         0.8317               0.6608               17.0883              24.9508
+                 KNN         0.8241               0.6710               15.3108              23.9064
+   Gradient Boosting         0.8185               0.7103               10.8191              17.4979
+      FT-Transformer         0.7101               0.7149               -0.4814               9.4662
+           SVM (RBF)         0.6966               0.7072               -1.0661               8.7761
+            AdaBoost         0.6831               0.7166               -3.3529               4.1504
+                 MLP         0.6746               0.6636                1.0933              13.7537
+ Logistic Regression         0.6157               0.6650               -4.9343               7.8089
+         Naive Bayes         0.6032               0.6519               -4.8710               3.3845
+
+--- MAIN (maternal) ---
+               Model        Accuracy         MacroF1             MCC             QWK             AUC      HighRecall     UnderTriage             ECE           Brier
+   Gradient Boosting 0.7103 ± 0.0332 0.6471 ± 0.0424 0.5194 ± 0.0519 0.7028 ± 0.0470 0.8209 ± 0.0264 0.7607 ± 0.0855 0.1797 ± 0.0341 0.1368 ± 0.0289 0.4252 ± 0.0390
+       Random Forest 0.7113 ± 0.0328 0.6363 ± 0.0435 0.5209 ± 0.0525 0.7014 ± 0.0529 0.8166 ± 0.0291 0.7737 ± 0.0766 0.1846 ± 0.0330 0.1028 ± 0.0247 0.4080 ± 0.0366
+             XGBoost 0.6996 ± 0.0367 0.6360 ± 0.0473 0.4996 ± 0.0628 0.6935 ± 0.0472 0.8151 ± 0.0322 0.7509 ± 0.0861 0.1836 ± 0.0332 0.1771 ± 0.0336 0.4543 ± 0.0530
+            CatBoost 0.7068 ± 0.0322 0.6354 ± 0.0427 0.5113 ± 0.0540 0.7045 ± 0.0584 0.8100 ± 0.0267 0.7441 ± 0.0751 0.1923 ± 0.0334 0.1331 ± 0.0321 0.4310 ± 0.0405
+       CatBoost + KF 0.7014 ± 0.0463 0.6343 ± 0.0571 0.5026 ± 0.0798 0.7020 ± 0.0551 0.8028 ± 0.0320 0.7416 ± 0.0992 0.1877 ± 0.0445 0.1447 ± 0.0350 0.4375 ± 0.0430
+            LightGBM 0.6941 ± 0.0396 0.6339 ± 0.0469 0.4926 ± 0.0666 0.6904 ± 0.0450 0.8113 ± 0.0313 0.7343 ± 0.0841 0.1858 ± 0.0394 0.1824 ± 0.0407 0.4643 ± 0.0564
+OCH-MRNet (Proposed) 0.6678 ± 0.0349 0.6296 ± 0.0441 0.4710 ± 0.0519 0.6773 ± 0.0436 0.8010 ± 0.0263 0.8155 ± 0.0617 0.1370 ± 0.0361 0.1089 ± 0.0278 0.4525 ± 0.0353
+            AdaBoost 0.7166 ± 0.0349 0.6288 ± 0.0477 0.5310 ± 0.0577 0.6870 ± 0.0489 0.7948 ± 0.0217 0.7370 ± 0.0986 0.2059 ± 0.0381 0.3592 ± 0.0347 0.6296 ± 0.0031
+         Extra Trees 0.6952 ± 0.0305 0.6209 ± 0.0401 0.4922 ± 0.0461 0.6872 ± 0.0494 0.7983 ± 0.0312 0.7398 ± 0.0695 0.1979 ± 0.0338 0.1568 ± 0.0239 0.4532 ± 0.0420
+       Decision Tree 0.6780 ± 0.0262 0.6144 ± 0.0314 0.4659 ± 0.0393 0.6783 ± 0.0494 0.7260 ± 0.0260 0.7089 ± 0.0785 0.1927 ± 0.0324 0.3120 ± 0.0352 0.6364 ± 0.0564
+      FT-Transformer 0.7149 ± 0.0332 0.6106 ± 0.0485 0.5297 ± 0.0498 0.7122 ± 0.0367 0.8005 ± 0.0304 0.8135 ± 0.0802 0.1888 ± 0.0366 0.1110 ± 0.0286 0.4073 ± 0.0338
+           SVM (RBF) 0.7072 ± 0.0382 0.6037 ± 0.0425 0.5154 ± 0.0545 0.6768 ± 0.0464 0.7642 ± 0.0326 0.7483 ± 0.0937 0.2094 ± 0.0443 0.1031 ± 0.0276 0.4380 ± 0.0284
+                 KNN 0.6710 ± 0.0418 0.5892 ± 0.0455 0.4467 ± 0.0616 0.6254 ± 0.0558 0.7636 ± 0.0399 0.6649 ± 0.1086 0.2268 ± 0.0430 0.1484 ± 0.0332 0.4812 ± 0.0472
+     Stacking (Lit.) 0.6608 ± 0.0419 0.5838 ± 0.0462 0.4345 ± 0.0680 0.6526 ± 0.0604 0.7538 ± 0.0341 0.7525 ± 0.0822 0.2027 ± 0.0404 0.2184 ± 0.0394 0.5323 ± 0.0584
+                 MLP 0.6636 ± 0.0432 0.5300 ± 0.0595 0.4407 ± 0.0599 0.5781 ± 0.0742 0.7721 ± 0.0334 0.7016 ± 0.1019 0.2359 ± 0.0498 0.1199 ± 0.0353 0.4718 ± 0.0413
+         Naive Bayes 0.6519 ± 0.0421 0.5296 ± 0.0443 0.4109 ± 0.0571 0.5744 ± 0.0499 0.7687 ± 0.0225 0.5464 ± 0.1099 0.2921 ± 0.0439 0.1869 ± 0.0331 0.5105 ± 0.0552
+ Logistic Regression 0.6650 ± 0.0380 0.5251 ± 0.0474 0.4391 ± 0.0587 0.5741 ± 0.0630 0.7649 ± 0.0287 0.6330 ± 0.0869 0.2572 ± 0.0416 0.1127 ± 0.0284 0.4620 ± 0.0325
+
+--- ABLATION (maternal) ---
+                          Model  MacroF1_mean  HighRecall_mean  ECE_mean  ΔMacroF1 vs Full (pp)  ΔHighRecall vs Full (pp)
+               OCH-MRNet (Full)        0.6260           0.8162    0.1130                 0.0000                    0.0000
+w/o Stacking meta-learner (avg)        0.6347           0.8459    0.1044                 0.8660                    2.9772
+    w/o FT branch (CatBoost+GB)        0.6422           0.8384    0.1172                 1.6208                    2.2222
+    w/o GB branch (FT+CatBoost)        0.6182           0.8189    0.0999                -0.7859                    0.2673
+    w/o Tree branches (FT only)        0.5717           0.8183    0.1007                -5.4366                    0.2115
+         w/o Knowledge features        0.6505           0.8248    0.1005                 2.4500                    0.8632
+          w/o Ordinal loss (CE)        0.6312           0.8252    0.1112                 0.5165                    0.8974
+   w/o Cost-sensitive weighting        0.6264           0.8059    0.0842                 0.0349                   -1.0317
+
+--- CONFORMAL (maternal) ---
+                                    Coverage  HighClassCoverage  AvgSetSize  Abstain  SingletonAcc
+Method                       Alpha                                                                
+Class-conditional (Mondrian) 0.05      0.955              0.970       2.221    0.928         0.893
+                             0.10      0.905              0.917       1.890    0.824         0.840
+                             0.15      0.842              0.873       1.667    0.661         0.714
+                             0.20      0.790              0.829       1.521    0.521         0.645
+Marginal (LAC)               0.05      0.949              0.921       2.055    0.901         0.885
+                             0.10      0.894              0.885       1.764    0.728         0.822
+                             0.15      0.847              0.863       1.564    0.557         0.761
+                             0.20      0.790              0.849       1.364    0.364         0.720
+
+--- STATS (maternal) --- Friedman p=2.29e-30, CD=4.939
+Model
+Gradient Boosting        4.98
+CatBoost + KF            5.84
+CatBoost                 6.26
+LightGBM                 6.32
+XGBoost                  6.36
+Random Forest            6.44
+AdaBoost                 6.72
+OCH-MRNet (Proposed)     6.84
+Extra Trees              7.72
+Decision Tree            8.56
+FT-Transformer           9.08
+SVM (RBF)               10.28
+Stacking (Lit.)         11.32
+KNN                     11.36
+MLP                     14.32
+Naive Bayes             15.04
+Logistic Regression     15.56
+
+--- SHAP top features (maternal) ---
+    Feature     Low     Mid    High   Total
+         BS 0.12251 0.09277 0.18338 0.39866
+ SystolicBP 0.07456 0.08266 0.08250 0.23972
+   BodyTemp 0.07878 0.02006 0.07144 0.17028
+        Age 0.04585 0.03174 0.03807 0.11566
+DiastolicBP 0.04435 0.04150 0.02948 0.11532
+  HeartRate 0.02019 0.01792 0.01618 0.05429
+
+--- MAIN (fetal) ---
+               Model        Accuracy         MacroF1             MCC             QWK             AUC      HighRecall     UnderTriage             ECE           Brier
+             XGBoost 0.9579 ± 0.0102 0.9241 ± 0.0224 0.8835 ± 0.0279 0.9265 ± 0.0243 0.9906 ± 0.0035 0.9240 ± 0.0568 0.0279 ± 0.0083 0.0269 ± 0.0063 0.0682 ± 0.0142
+            LightGBM 0.9571 ± 0.0074 0.9190 ± 0.0169 0.8812 ± 0.0204 0.9211 ± 0.0179 0.9899 ± 0.0038 0.9111 ± 0.0427 0.0286 ± 0.0073 0.0382 ± 0.0060 0.0769 ± 0.0122
+     Stacking (Lit.) 0.9527 ± 0.0126 0.9165 ± 0.0250 0.8699 ± 0.0330 0.9161 ± 0.0282 0.9863 ± 0.0049 0.9154 ± 0.0521 0.0278 ± 0.0066 0.0347 ± 0.0069 0.0794 ± 0.0182
+            CatBoost 0.9539 ± 0.0101 0.9161 ± 0.0213 0.8717 ± 0.0283 0.9141 ± 0.0231 0.9887 ± 0.0034 0.9051 ± 0.0528 0.0320 ± 0.0087 0.0187 ± 0.0047 0.0724 ± 0.0122
+       CatBoost + KF 0.9532 ± 0.0117 0.9153 ± 0.0242 0.8696 ± 0.0317 0.9136 ± 0.0252 0.9886 ± 0.0035 0.9090 ± 0.0585 0.0331 ± 0.0105 0.0211 ± 0.0054 0.0720 ± 0.0132
+   Gradient Boosting 0.9521 ± 0.0106 0.9137 ± 0.0215 0.8670 ± 0.0280 0.9052 ± 0.0211 0.9866 ± 0.0046 0.9016 ± 0.0416 0.0323 ± 0.0075 0.0245 ± 0.0074 0.0750 ± 0.0126
+       Random Forest 0.9472 ± 0.0091 0.8994 ± 0.0175 0.8524 ± 0.0243 0.9010 ± 0.0217 0.9888 ± 0.0031 0.8836 ± 0.0393 0.0382 ± 0.0083 0.0380 ± 0.0078 0.0828 ± 0.0101
+OCH-MRNet (Proposed) 0.9205 ± 0.0173 0.8763 ± 0.0232 0.8083 ± 0.0368 0.8631 ± 0.0348 0.9867 ± 0.0045 0.9363 ± 0.0395 0.0140 ± 0.0050 0.0309 ± 0.0077 0.1133 ± 0.0185
+           SVM (RBF) 0.9309 ± 0.0143 0.8723 ± 0.0275 0.8071 ± 0.0401 0.8818 ± 0.0283 0.9819 ± 0.0064 0.8696 ± 0.0514 0.0440 ± 0.0121 0.0299 ± 0.0071 0.1016 ± 0.0187
+       Decision Tree 0.9229 ± 0.0107 0.8713 ± 0.0200 0.7905 ± 0.0321 0.8621 ± 0.0278 0.9030 ± 0.0187 0.9033 ± 0.0510 0.0377 ± 0.0101 0.0769 ± 0.0106 0.1537 ± 0.0210
+         Extra Trees 0.9325 ± 0.0125 0.8660 ± 0.0246 0.8095 ± 0.0357 0.8824 ± 0.0241 0.9845 ± 0.0047 0.8368 ± 0.0559 0.0487 ± 0.0118 0.0351 ± 0.0076 0.0948 ± 0.0126
+            AdaBoost 0.9150 ± 0.0112 0.8583 ± 0.0227 0.7611 ± 0.0320 0.8384 ± 0.0352 0.9461 ± 0.0070 0.8917 ± 0.0553 0.0532 ± 0.0095 0.5507 ± 0.0109 0.6093 ± 0.0015
+                 MLP 0.9153 ± 0.0178 0.8379 ± 0.0331 0.7622 ± 0.0514 0.8481 ± 0.0347 0.9739 ± 0.0078 0.7874 ± 0.0630 0.0558 ± 0.0178 0.0298 ± 0.0080 0.1239 ± 0.0206
+      FT-Transformer 0.9207 ± 0.0139 0.8373 ± 0.0288 0.7813 ± 0.0402 0.8602 ± 0.0398 0.9730 ± 0.0076 0.7851 ± 0.0937 0.0462 ± 0.0144 0.0391 ± 0.0136 0.1227 ± 0.0198
+                 KNN 0.9126 ± 0.0164 0.8315 ± 0.0306 0.7507 ± 0.0435 0.8400 ± 0.0342 0.9669 ± 0.0087 0.7932 ± 0.0537 0.0647 ± 0.0131 0.0303 ± 0.0077 0.1219 ± 0.0149
+ Logistic Regression 0.8948 ± 0.0107 0.7983 ± 0.0236 0.7079 ± 0.0304 0.8100 ± 0.0206 0.9679 ± 0.0083 0.7606 ± 0.0417 0.0604 ± 0.0083 0.0271 ± 0.0093 0.1411 ± 0.0181
+         Naive Bayes 0.7369 ± 0.0526 0.6580 ± 0.0379 0.5427 ± 0.0434 0.5941 ± 0.0615 0.8986 ± 0.0164 0.6098 ± 0.0479 0.0371 ± 0.0096 0.2425 ± 0.0492 0.4974 ± 0.1019
+
+--- ABLATION (fetal) ---
+                          Model  MacroF1_mean  HighRecall_mean  ECE_mean  ΔMacroF1 vs Full (pp)  ΔHighRecall vs Full (pp)
+               OCH-MRNet (Full)        0.8736           0.9315    0.0374                 0.0000                    0.0000
+w/o Stacking meta-learner (avg)        0.9082           0.9312    0.0321                 3.4610                   -0.0309
+    w/o FT branch (CatBoost+GB)        0.8783           0.9371    0.0309                 0.4720                    0.5573
+    w/o GB branch (FT+CatBoost)        0.8715           0.9372    0.0348                -0.2130                    0.5714
+    w/o Tree branches (FT only)        0.8143           0.8917    0.0331                -5.9375                   -3.9859
+         w/o Knowledge features        0.8682           0.9369    0.0385                -0.5434                    0.5405
+          w/o Ordinal loss (CE)        0.8669           0.9260    0.0321                -0.6739                   -0.5546
+   w/o Cost-sensitive weighting        0.9177           0.8967    0.0195                 4.4098                   -3.4790
+
+--- CONFORMAL (fetal) ---
+                                    Coverage  HighClassCoverage  AvgSetSize  Abstain  SingletonAcc
+Method                       Alpha                                                                
+Class-conditional (Mondrian) 0.05      0.958              0.970       1.160    0.154         0.958
+                             0.10      0.908              0.922       0.999    0.020         0.916
+                             0.15      0.863              0.888       0.909    0.091         0.950
+                             0.20      0.814              0.842       0.838    0.162         0.971
+Marginal (LAC)               0.05      0.954              0.954       1.079    0.078         0.954
+                             0.10      0.908              0.927       0.972    0.028         0.934
+                             0.15      0.860              0.913       0.892    0.108         0.964
+                             0.20      0.812              0.905       0.830    0.170         0.978
+
+--- STATS (fetal) --- Friedman p=4.01e-36, CD=6.376
+Model
+XGBoost                  2.40
+LightGBM                 3.67
+CatBoost                 3.77
+Stacking (Lit.)          3.87
+CatBoost + KF            3.97
+Gradient Boosting        4.47
+Random Forest            6.53
+SVM (RBF)                9.47
+OCH-MRNet (Proposed)     9.53
+Decision Tree            9.80
+Extra Trees             10.60
+AdaBoost                11.73
+MLP                     12.93
+FT-Transformer          13.53
+KNN                     14.00
+Logistic Regression     15.73
+Naive Bayes             17.00
+
+--- SHAP top features (fetal) ---
+                                               Feature  Normal  Suspect  Pathological   Total
+                                         accelerations 0.18848  0.14500       0.04415 0.37763
+                       abnormal_short_term_variability 0.11601  0.08197       0.07135 0.26934
+percentage_of_time_with_abnormal_long_term_variability 0.09065  0.09422       0.05398 0.23885
+                              prolongued_decelerations 0.06493  0.01483       0.05145 0.13122
+                                        histogram_mean 0.03475  0.04176       0.03842 0.11494
+                                      histogram_median 0.02750  0.03848       0.03070 0.09669
+                  mean_value_of_short_term_variability 0.04051  0.04047       0.00819 0.08917
+                                  uterine_contractions 0.04331  0.02745       0.01781 0.08858
+
+--- FAIRNESS (age) ---
+               Model        AgeBand   n  n_high  Accuracy  MacroF1  HighRecall  UnderTriage    ECE
+OCH-MRNet (Proposed)     <20 (teen) 126      22    0.6508   0.5621      0.5909       0.1587 0.1180
+OCH-MRNet (Proposed)          20–34 189      36    0.7037   0.7017      0.8611       0.1270 0.0806
+OCH-MRNet (Proposed) ≥35 (advanced) 137      54    0.6277   0.5336      0.8704       0.1168 0.1199
+   Gradient Boosting     <20 (teen) 126      22    0.6349   0.5234      0.5455       0.2063 0.1842
+   Gradient Boosting          20–34 189      36    0.7566   0.7386      0.8333       0.1746 0.0864
+   Gradient Boosting ≥35 (advanced) 137      54    0.7226   0.5926      0.8148       0.1533 0.1101
+
+--- COUNTERFACTUALS ---
+ PatientID  Age  Original_P_high  CF_rank                                   Changes New_class  New_P_high  Norm_L1_distance
+       198 50.0            0.838        1          BS: 16 → 9.1; HeartRate: 76 → 74       Mid       0.379             2.684
+       198 50.0            0.838        2                              BS: 16 → 8.3       Mid       0.436             2.722
+       198 50.0            0.838        3                              BS: 16 → 8.2       Mid       0.416             2.757
+       249 45.0            0.793        1 BodyTemp: 101 → 101.6; HeartRate: 70 → 75       Mid       0.482             1.038
+       249 45.0            0.793        2 BodyTemp: 101 → 102.2; HeartRate: 70 → 74       Mid       0.434             1.341
+       249 45.0            0.793        3 BodyTemp: 101 → 101.6; HeartRate: 70 → 79       Mid       0.482             1.529
+       150 60.0            0.764        1      SystolicBP: 120 → 119; BS: 15 → 10.7       Mid       0.374             1.576
+       150 60.0            0.764        2       DiastolicBP: 85 → 86; BS: 15 → 10.5       Mid       0.384             1.663
+       150 60.0            0.764        3                               BS: 15 → 10       Mid       0.475             1.767
+
+--- LITERATURE ---
+                                                  Study                  Data                        Protocol  Accuracy  MacroF1    AUC
+               Monson & Sabarmathi (stacking RF+XGB+GB)   Maternal (1014 raw)   Random split, duplicates kept    0.9113      NaN    NaN
+                    Yesmin et al., 2026 (fuzzy-XGBoost)   Maternal (1014 raw)                     As reported    0.8867      NaN 0.9703
+                   Solent study (Random Forest + SMOTE)   Maternal (1014 raw)  80/20 split, SMOTE after split    0.8820   0.8880 0.9660
+OCH-MRNet (Proposed) — Protocol A (same naive protocol)   Maternal (1014 raw)             Naive stratified CV    0.8353   0.8375 0.9465
+       OCH-MRNet (Proposed) — Protocol B (leakage-free) Maternal (452 unique) Dedup + group-stratified 5×5 CV    0.6678   0.6296 0.8010
+
+Figures: ['Fig02_class_distribution_raw_vs_dedup.pdf', 'Fig02_class_distribution_raw_vs_dedup.png', 'Fig03a_maternal_correlation.pdf', 'Fig03a_maternal_correlation.png', 'Fig03b_maternal_feature_by_risk.pdf', 'Fig03b_maternal_feature_by_risk.png', 'Fig03c_fetal_feature_correlation.pdf', 'Fig03c_fetal_feature_correlation.png', 'Fig04_leakage_inflation.pdf', 'Fig04_leakage_inflation.png', 'Fig05_model_comparison_fetal.pdf', 'Fig05_model_comparison_fetal.png', 'Fig05_model_comparison_maternal.pdf', 'Fig05_model_comparison_maternal.png', 'Fig06_confusion_fetal.pdf', 'Fig06_confusion_fetal.png', 'Fig06_confusion_maternal.pdf', 'Fig06_confusion_maternal.png', 'Fig07_roc_pr_fetal.pdf', 'Fig07_roc_pr_fetal.png', 'Fig07_roc_pr_maternal.pdf', 'Fig07_roc_pr_maternal.png', 'Fig08_reliability_fetal.pdf', 'Fig08_reliability_fetal.png', 'Fig08_reliability_maternal.pdf', 'Fig08_reliability_maternal.png', 'Fig09_conformal_fetal.pdf', 'Fig09_conformal_fetal.png', 'Fig09_conformal_maternal.pdf', 'Fig09_conformal_maternal.png', 'Fig10_critical_difference_fetal.pdf', 'Fig10_critical_difference_fetal.png', 'Fig10_critical_difference_maternal.pdf', 'Fig10_critical_difference_maternal.png', 'Fig11a_shap_beeswarm_fetal.pdf', 'Fig11a_shap_beeswarm_fetal.png', 'Fig11a_shap_beeswarm_maternal.pdf', 'Fig11a_shap_beeswarm_maternal.png', 'Fig11b_shap_importance_fetal.pdf', 'Fig11b_shap_importance_fetal.png', 'Fig11b_shap_importance_maternal.pdf', 'Fig11b_shap_importance_maternal.png', 'Fig11c_shap_dependence_fetal.png', 'Fig11c_shap_dependence_maternal.png', 'Fig11d_shap_waterfall_fetal.pdf', 'Fig11d_shap_waterfall_fetal.png', 'Fig11d_shap_waterfall_maternal.pdf', 'Fig11d_shap_waterfall_maternal.png', 'Fig12_decision_curve_fetal.pdf', 'Fig12_decision_curve_fetal.png', 'Fig12_decision_curve_maternal.pdf', 'Fig12_decision_curve_maternal.png', 'Fig13_robustness_fetal.pdf', 'Fig13_robustness_fetal.png', 'Fig13_robustness_maternal.pdf', 'Fig13_robustness_maternal.png', 'Fig14_ablation_fetal.pdf', 'Fig14_ablation_fetal.png', 'Fig14_ablation_maternal.pdf', 'Fig14_ablation_maternal.png', 'Fig15_subgroup_age.pdf', 'Fig15_subgroup_age.png', 'FigS1_gate_distribution.pdf', 'FigS1_gate_distribution.png']
+Tables: ['T01_dataset_description.csv', 'T01_dataset_description.tex', 'T02_duplicate_audit.csv', 'T02_duplicate_audit.tex', 'T03_hyperparameters.csv', 'T03_hyperparameters.tex', 'T04_leakage_protocolA_vs_B.csv', 'T04_leakage_protocolA_vs_B.tex', 'T05_main_results_fetal.csv', 'T05_main_results_fetal.tex', 'T05_main_results_maternal.csv', 'T05_main_results_maternal.tex', 'T06_ablation_fetal.csv', 'T06_ablation_fetal.tex', 'T06_ablation_maternal.csv', 'T06_ablation_maternal.tex', 'T07a_calibration_fetal.csv', 'T07a_calibration_fetal.tex', 'T07a_calibration_maternal.csv', 'T07a_calibration_maternal.tex', 'T07b_conformal_fetal.csv', 'T07b_conformal_fetal.tex', 'T07b_conformal_maternal.csv', 'T07b_conformal_maternal.tex', 'T07c_triage_sets_fetal.csv', 'T07c_triage_sets_fetal.tex', 'T07c_triage_sets_maternal.csv', 'T07c_triage_sets_maternal.tex', 'T08_statistical_tests_fetal.csv', 'T08_statistical_tests_fetal.tex', 'T08_statistical_tests_maternal.csv', 'T08_statistical_tests_maternal.tex', 'T08b_avg_ranks_fetal.csv', 'T08b_avg_ranks_maternal.csv', 'T09_subgroup_fairness_age.csv', 'T09_subgroup_fairness_age.tex', 'T10_computational_cost.csv', 'T10_computational_cost.tex', 'T11_robustness_fetal.csv', 'T11_robustness_fetal.tex', 'T11_robustness_maternal.csv', 'T11_robustness_maternal.tex', 'T12_shap_importance_fetal.csv', 'T12_shap_importance_fetal.tex', 'T12_shap_importance_maternal.csv', 'T12_shap_importance_maternal.tex', 'T13_counterfactuals_maternal.csv', 'T13_counterfactuals_maternal.tex', 'T14_literature_comparison.csv', 'T14_literature_comparison.tex', 'raw_results_fetal_B.csv', 'raw_results_maternal_A.csv', 'raw_results_maternal_B.csv']
+
+Download: /kaggle/working/och_mrnet_outputs.zip
